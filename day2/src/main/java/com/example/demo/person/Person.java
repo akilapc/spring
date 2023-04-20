@@ -1,8 +1,11 @@
 package com.example.demo.person;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class Person {
    private int id;
    private String name;
+   @JsonIgnore
    private int age;
 public Person(int id, String name, int age) {
 	super();
